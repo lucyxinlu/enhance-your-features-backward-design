@@ -3,18 +3,55 @@
   <head>
      <meta charset="utf-8">
     <title>enhance your features</title>
+    <!==Store and retrieve the data>
+     <script type="text/javascript">
+        function test(){
+            var param="";
+            if(document.getElementById('1').checked)
+                param+=document.getElementById('1').value+",";
+            if(document.getElementById('2').checked)
+                param+=document.getElementById('2').value+",";
+             if(document.getElementById('3').checked)
+                param+=document.getElementById('3').value+",";
+             if(document.getElementById('4').checked)
+                param+=document.getElementById('4').value+",";
+            if(document.getElementById('5').checked)
+                param+=document.getElementById('5').value+",";
+            if(document.getElementById('6').checked)
+                param+=document.getElementById('6').value+",";
+            param = param.substring(0,param.length-1);
+            document.location.href="xxx.jsp?param="+param;
+        }
+    </script>
   </head>
   <body>
+    <!==the main instructional material>
     <h1 style="text-align:center;border: 3px solid rgba(206,89,55,0.61);">Enhance your feartures</h1>
     <ol>
       <li><b>Fill in your eyebrows.</b> If you already have dark, well-defined eyebrows, you can skip this step. Otherwise, use an eyebrow pencil that closely matches your hair color to fill in your eyebrows. </li>
       <li><b>Brush on some blush.</b> Use a blush brush to apply blush to the apples of your cheeks. </li>
       <li><b>Apply eyeshadow.</b> Purchase quality eyeshadows that won’t wear off throughout the day.</li>
-      <li><b>Wear lipstick or lip gloss.</b> Choose a bright color that makes them pop flawlessly. </li>
+      <li><b>Wear lipstick or lip gloss.</b> Choose a bright color that makes them pop flawlessly. Matched blushes can be better.</li>
     </ol>
+    <!==make the formative assessment>
+    <p>After you read all the material, please complete all the following questions.</p>
+      <form method="get" action="xxx.asp">
+    <ol>
+        <li>Can we choose whatever the color the eyebrow pencil is in ?</li>
+        Yes<input type="checkbox" name="ck" value="1" id="1">    
+        No<input type="checkbox" name="ck" value="2" id="2">
+        <li>How to judge whether the eyeshadow is quality or not?</li>
+       <p> Do not wear off throughout the day.<input type="checkbox" name="ck" value="3" id="3"></p>
+      Have a lot of different colors.<input type="checkbox" name="ck" value="4" id="4">
+        <li>What's the final step of enhancing your features?</li>
+        <p>brush on some blush.<input type="checkbox" name="ck" value="5" id="5"></p>
+        <p>Wear lipsticks.<input type="checkbox" name="ck" value="6" id="6"></p>
+        <input type="button" value="提交" onclick="test()">    
+    </form>
+    <!==Links for other pages>
     
-    <p style="text-align:left"><a href="https://lucyxinlu.github.io/backward-design/">Home Page</a></p>
+    <p style="text-align:center"><a href="https://lucyxinlu.github.io/backward-design/">Home Page</a></p>
     <p style="text-align:center"><a href="https://lucyxinlu.github.io/try-with-different-products-backward-design/">Next</a></p>
-    <p style="text-align:right"><a href="https://lucyxinlu.github.io/radian-your-skin-backward-design/">Previous</a></p>
+    <p style="text-align:center"><a href="https://lucyxinlu.github.io/radian-your-skin-backward-design/">Previous</a></p>
   </body>
 </html>
